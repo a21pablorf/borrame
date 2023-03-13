@@ -18,9 +18,9 @@ public class ProxectoErros {
         int numInvertido=0;
         
         while(num!=0){
-            resto=num/10;
+            resto=num%10;
             numInvertido=numInvertido*10+resto;
-            
+            num/=10;
         }
         System.out.println("O numero invertido é "+numInvertido);
     }
